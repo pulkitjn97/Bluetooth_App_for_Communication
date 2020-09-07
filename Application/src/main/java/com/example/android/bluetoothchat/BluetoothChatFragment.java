@@ -383,6 +383,9 @@ public class BluetoothChatFragment extends Fragment {
                     Log.e("Message_Argument_2",""+msg.arg2);
                     Log.e("Length",""+readBuf.length);
                     for(int i=0;i<readBuf.length;i++)
+                        //FLOAT AX = READBUF(1:4);
+                        //FLOAT AY = READBUF(5:8);
+                        //FLOAT AZ = READBUF(9:12);
                         Log.e("Values",""+(float)readBuf[i]);
                     String readMessage = new String(readBuf, 0, msg.arg1);
                     receiveBuffer += readMessage;
